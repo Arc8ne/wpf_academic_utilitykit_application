@@ -1,0 +1,1 @@
+# wpf_academic_utilitykit_application
