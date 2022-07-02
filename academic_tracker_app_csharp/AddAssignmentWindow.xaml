@@ -1,0 +1,56 @@
+﻿<Window x:Class="academic_tracker_app_csharp.AddAssignmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:academic_tracker_app_csharp"
+        mc:Ignorable="d"
+        Title="Add An Assignment" Height="320" Width="400" WindowStartupLocation="Manual" Left="250" Top="40">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Assignment Name: " Grid.Column="1" Grid.Row="2" Margin="0,0,20,10"/>
+
+        <TextBox x:Name="assignment_name_text_box" Grid.Column="2" Grid.Row="2" Width="200" Margin="0,0,20,10"/>
+
+        <TextBlock Text="Assignment Type: " Grid.Column="1" Grid.Row="3" Margin="0,0,20,10"/>
+
+        <ComboBox x:Name="assignment_type_combo_box" Grid.Column="2" Grid.Row="3" Margin="0,0,20,10">
+            <ComboBoxItem Content="Individual"/>
+
+            <ComboBoxItem Content="Group"/>
+        </ComboBox>
+
+        <TextBlock Text="Assignment Deadline: " Grid.Column="1" Grid.Row="4" Margin="0,0,20,10"/>
+
+        <DatePickerTextBox x:Name="assignment_deadline_picker" Grid.Column="2" Grid.Row="4" Margin="0,0,20,10"/>
+
+        <TextBlock Text="Assignment Status: " Grid.Column="1" Grid.Row="5" Margin="0,0,20,10"/>
+
+        <ComboBox x:Name="assignment_status_combo_box" Grid.Column="2" Grid.Row="5" Margin="0,0,20,10">
+            <ComboBoxItem Content="Not Submitted"/>
+
+            <ComboBoxItem Content="Overdue"/>
+
+            <ComboBoxItem Content="Submitted"/>
+        </ComboBox>
+
+        <Button x:Name="mini_add_assignment_btn" Content="Add Assignment" Height="30" Width="140" Grid.Column="1" Grid.Row="6" Margin="0,90,0,0" Click="mini_add_assignment_btn_Click"/>
+    </Grid>
+</Window>
