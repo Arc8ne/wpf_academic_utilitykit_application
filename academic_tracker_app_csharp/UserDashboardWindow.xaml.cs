@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace academic_tracker_app_csharp
 {
@@ -134,6 +135,15 @@ namespace academic_tracker_app_csharp
             AutoFileCreatorPromptWindow auto_file_create_screen = new AutoFileCreatorPromptWindow(prev_login_window.app_logic_obj);
 
             auto_file_create_screen.Show();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            //MessageBox.Show("Shutting down application now.");
+
+            ApplicationLogic.save_users_data(prev_login_window.app_logic_obj.start_user_obj);
+
+            MessageBox.Show("All application data saved successfully.");
         }
     }
 }

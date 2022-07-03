@@ -49,9 +49,9 @@
 
         <CheckBox x:Name="show_passwd_check_box" Grid.Column="2" Grid.Row="4" Content="Show Password" Margin="0,20,0,0" Checked="show_passwd_check_box_Checked" Unchecked="show_passwd_check_box_Unchecked"/>
 
-        <Button x:Name="log_in_btn" Grid.Column="1" Grid.Row="5" MaxHeight="30" Margin="0,280,0,0" Click="log_in_btn_Click" Grid.RowSpan="2" Content="Log In"/>
+        <Button x:Name="log_in_btn" Grid.Column="1" Grid.Row="5" Height="30" Margin="0,280,0,0" Click="log_in_btn_Click" Grid.RowSpan="2" Content="Log In"/>
 
-        <Button x:Name="view_users_btn" Grid.Column="2" Grid.Row="5" MaxHeight="30" Margin="100,280,100,0" Grid.RowSpan="2" Click="view_users_btn_Click" Content="View Current Users"/>
+        <Button x:Name="register_btn" Grid.Column="2" Grid.Row="5" Height="30" Margin="100,280,100,0" Grid.RowSpan="2" Click="register_btn_Click" Content="Register"/>
 
     </Grid>
 </Window>

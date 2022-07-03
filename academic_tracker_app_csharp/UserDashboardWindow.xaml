@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:academic_tracker_app_csharp"
         mc:Ignorable="d"
-        Title="Dashboard" Height="600" Width="800" WindowStartupLocation="Manual" Left="250" Top="40">
+        Title="Dashboard" Height="600" Width="800" WindowStartupLocation="Manual" Left="250" Top="40" Closing="Window_Closing">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -41,7 +41,7 @@
 
             <Button x:Name="auto_file_creator_btn" Content="Automatic File Creator" Height="30" Width="200" Margin="0,0,0,20" Click="auto_file_creator_btn_Click"/>
 
-            <Button x:Name="logout_btn" Content="Logout" Height="30" Width="200" Margin="0, 0, 0, 0" HorizontalAlignment="Center" Click="logout_btn_Click"/>
+            <Button x:Name="logout_btn" Content="Logout" Height="30" Width="200" Margin="0, 0, 0, 20" HorizontalAlignment="Center" Click="logout_btn_Click"/>
 
         </StackPanel>    
             
